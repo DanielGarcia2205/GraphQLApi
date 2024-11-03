@@ -23,6 +23,9 @@ const userTypeDef = `#graphql
     # user: Obtiene los datos de un usuario específico.
     # Recibe como argumento el 'userId' del usuario deseado.
     user(userId: ID!): User
+
+    # users: Obtiene una lista de todos los usuarios en el sistema.
+    users: [User] # Añadido para definir la consulta 'users'.
   }
 
   # Mutaciones disponibles para gestionar usuarios y autenticación.
