@@ -1,16 +1,12 @@
-// Datos de ejemplo para probar la API de seguimiento de gastos.
-// Este archivo contiene arreglos de usuarios y transacciones que representan
-// datos ficticios, permitiendo simular la funcionalidad de la API sin conexión a una base de datos.
-
-// Array de 5 usuarios con datos ficticios.
+// Datos de ejemplo para probar la API de seguimiento de gastos sin conexión a una base de datos.
 const users = [
   {
-    _id: "1",                   // Identificador único del usuario.
-    username: "user1",          // Nombre de usuario.
-    name: "User One",           // Nombre real del usuario.
-    password: "password1",      // Contraseña del usuario.
+    _id: "1", // Identificador único del usuario.
+    username: "user1", // Nombre de usuario.
+    name: "User One", // Nombre real del usuario.
+    password: "password1", // Contraseña del usuario.
     profilePicture: "profile1.jpg", // URL de la imagen de perfil del usuario.
-    gender: "male",             // Género del usuario.
+    gender: "male", // Género del usuario.
   },
   {
     _id: "2",
@@ -46,18 +42,17 @@ const users = [
   },
 ];
 
-// Array de 5 transacciones con datos ficticios.
 // Cada transacción está asociada a un usuario específico mediante el campo userId.
 const transactions = [
   {
-    _id: "1",                  // Identificador único de la transacción.
-    userId: "1",               // ID del usuario que realizó la transacción.
+    _id: "1", // Identificador único de la transacción.
+    userId: "1", // ID del usuario que realizó la transacción.
     description: "Transaction One", // Descripción de la transacción.
-    paymentType: "CASH",       // Tipo de pago (por ejemplo, "CASH" o "CARD").
-    category: "Category One",  // Categoría de la transacción.
-    amount: 100.0,             // Monto de la transacción.
-    location: "Location One",  // Ubicación donde se realizó la transacción.
-    date: "2024-01-01",        // Fecha de la transacción.
+    paymentType: "CASH", // Tipo de pago (por ejemplo, "CASH" o "CARD").
+    category: "Category One", // Categoría de la transacción.
+    amount: 100.0, // Monto de la transacción.
+    location: "Location One", // Ubicación donde se realizó la transacción.
+    date: "2024-01-01", // Fecha de la transacción.
   },
   {
     _id: "2",
@@ -101,6 +96,5 @@ const transactions = [
   },
 ];
 
-// Exportación de los arreglos de usuarios y transacciones para su uso en otros archivos del proyecto.
-// Esto permite simular una base de datos en memoria en el entorno de desarrollo.
+// Exportación de los datos para uso en otros módulos del proyecto.
 export { users, transactions };
